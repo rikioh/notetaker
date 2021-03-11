@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Basic route that sends the user first to the AJAX Page
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'view.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
-app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'add.html')));
+app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'notes.html')));
 
 // Starts the server to begin listening
 
