@@ -4,13 +4,10 @@ const path = require('path');
 
 module.exports = (app) => {
 
-// Basic route that sends the user first to the index Page
+// Route which sends the user first to the index url
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../public/index.html')));
 
-// Basic route that sends the user first to the notes Page
+// Route which sends the user to the notes url
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, '../public/notes.html')));
-
-// // If no matching route is found default to home
-// app.get('*', (req, res) => res.sendFile(path.join(__dirname, '../public/index.html')));
 
 }

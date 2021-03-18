@@ -16,7 +16,7 @@ app.use(express.static('public'));
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 
-// require('./db/apiRoutes')(app);
+require('./db/apiRoutes')(app);
 require('./db/htmlRoutes')(app);
 
 // Starts the server to begin listening
